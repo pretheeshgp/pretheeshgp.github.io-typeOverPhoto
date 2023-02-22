@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TYPE OVER PHOTO|VIDEO SERIES</title>
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Alfa+Slab+One&family=Amatic+SC&display=swap" rel="stylesheet">
+
+
+					<style type="text/css">
+
+
+								* {
+
+									box-sizing: border-box;
+								}
+
+
+								body {
+
+
+
+										margin: 0;
+										background-color: #4c3737;
+										font-family: 'Alfa Slab One', cursive;
+
+
+
+								}
+
+								section.front {
+
+
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										padding: 0 128px;
+										margin: 4vh auto;
+										width: 75%;
+
+										display: grid;
+										grid-template-areas: "a b" "a c" "a d";
+										grid-template-columns: 4fr 1fr;
+										grid-template-rows: 25vh 25vh 25vh;
+										grid-gap: 10%;
+
+
+								}
+
+								.typeOverPhoto {
+
+
+											width: 60vw;
+											height: 80vh;
+											margin: 8vh auto;
+
+											background-image: url("type-plant.jpg");
+											background-size: cover;
+											background-position: center;
+
+											display: grid;
+										    justify-content: center;
+										    align-items: center;
+										    font-size: 64px;
+										    color: #000000;
+										    font-weight: 400;
+										    font-family: 'Special Elite', cursive;
+										    text-align: center;
+
+										    cursor: text;
+										    border-radius: 8%;
+										    border: solid 8px #FFFFFF;
+										    grid-area: a;
+
+
+								}
+
+								.typeOverPhoto:focus {
+
+												outline: none;
+
+
+								}
+
+								#tool1 {
+
+
+										grid-area: b;
+										cursor: pointer;
+
+								}
+
+								#tool2 {
+
+
+										grid-area: c;
+										cursor: pointer;
+								}
+
+								#tool3 {
+
+
+										grid-area: d;
+										cursor: pointer;
+								}
+
+
+
+								svg {
+
+										cursor: pointer;
+								}
+
+
+								.typeable {
+
+												width: 250px;
+												height: 250px;
+												
+												background: #70809063;
+    											color: #ffffff;
+
+												display: grid;
+												justify-content: center;
+												align-items: center;
+												padding: 8%;
+												outline: none;
+												border: none;
+												resize: none;
+												text-align: center;
+												overflow: hidden;
+
+												max-width: 100%;
+												max-height: 100%;
+												border-radius: 8%;
+
+												font-size: 6vh;
+
+												font-family: 'Caveat', cursive;
+								}
+
+
+
+
+								.typeable:focus {
+
+												outline: none;
+
+
+								}
+
+								.typeable: hover {
+
+
+												border: dashed 1px #000000;
+
+								}
+
+
+								form {
+
+										display: none;
+										width: 40vw;
+										height: 80vh;
+										background-color: #E1E0E0;
+								}
+
+
+								.ink {
+
+										position: absolute;
+										margin-right: 90vw;
+										margin-top: 32px;
+								}
+
+
+								.btn {
+
+											position: absolute;
+											top: 32px;
+											left: 88vw;
+											cursor: pointer;
+											background-color: #E0E0E0;
+											z-index: 4;
+											display: none;
+								}
+
+
+								.close {
+
+											position: absolute;
+											top: 32px;
+											left: 88vw;
+											cursor: pointer;
+											background-color: #E0E0E0;
+											z-index: 4;
+											display: none;
+
+								}
+
+								section.back {
+
+
+												width: 75%;
+												height: 85vh;
+												left: 12.5%;
+												display: none;
+												position: absolute;
+												top: 14vh;
+												background-color: transparent;
+												border: solid 1px;
+												opacity: 0.75;
+
+												position: absolute;
+
+											    text-align: center;
+											    padding: 24px;
+											    color: #89898d;
+
+
+											    justify-content: space-around;
+											    align-items: center;
+
+											    font-weight: 900;
+								}
+
+
+								.popupForm {
+
+
+											width: 90%;
+											height: 100%;
+											
+											margin: auto;
+								}
+
+
+								.title, .things1, .things2 {
+
+
+															width: 100%;
+								}
+
+								.title {
+
+											font-size: 24px;
+											display: grid;
+											justify-content: center;
+											align-items: center;
+								}
+
+								.things1 {
+
+											font-size: 20px;
+								}
+
+
+								.things1 {
+
+
+										display: flex;
+										flex-direction: column;
+										justify-content: space-around;
+										align-items: center;
+										height: 100%;
+
+								}
+
+
+								.ff {
+
+										width: 100%;
+										height: 10%;
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										font-size: 4vh;
+
+								}
+
+
+								.icon {
+
+											width: 15%;
+											height: 85%;
+											display: grid;
+											justify-content: center;
+											align-items: center;
+								}
+
+								select {
+
+											width: 80%;
+											height: 85%;
+											border: none;
+											outline: none;
+											cursor: pointer;
+											font-size: 4vh;
+								}
+
+
+								option {
+
+										text-align: center;
+								}
+
+
+								button {
+
+										cursor: pointer;
+								}
+								
+
+
+								.things2 {
+
+
+													display: grid;
+												    grid-template-columns: 1fr 1fr 1fr;
+												    grid-template-rows: 30% 30% 30%;
+												    grid-column-gap: 10%;
+												    grid-row-gap: 5%;
+												    justify-content: center;
+												    align-items: center;
+												    height: 100%;
+								}
+
+
+
+
+								.blk-parent {
+
+										    width: 100%;
+										    height: 80%;
+										    background-color: #000000;
+										    border: solid 1px #000000;
+										    cursor: pointer;
+
+
+								}
+
+								.wht-child {
+
+
+												width: 30%;
+												height: 30%;
+												background-color: #ffffff;
+								}
+
+
+								#blk1 {
+
+
+											display: flex;
+											justify-content: flex-start;
+											align-items: flex-start;
+								}
+
+
+								#blk2 {
+
+
+											display: flex;
+											justify-content: center;
+											align-items: flex-start;
+								}
+
+
+								#blk3 {
+
+											display: flex;
+											justify-content: flex-end;
+											align-items: flex-start;
+
+								}
+
+
+								#blk4 {
+
+											display: flex;
+											justify-content: flex-start;
+											align-items: center;
+
+								}
+
+
+								#blk5 {
+
+											display: flex;
+											justify-content: center;
+											align-items: center;
+
+								}
+
+
+
+								#blk6 {
+
+											display: flex;
+											justify-content: flex-end;
+											align-items: center;
+
+								}
+
+
+								#blk7 {
+
+
+											display: flex;
+											justify-content: flex-start;
+											align-items: flex-end;
+
+								}
+
+
+								#blk8 {
+
+											display: flex;
+											justify-content: center;
+											align-items: flex-end;
+
+								}
+
+
+								#blk9 {
+
+											display: flex;
+											justify-content: flex-end;
+											align-items: flex-end;
+
+								}
+
+
+								.findPhoto {
+
+
+										width: 75%;
+										margin-left: 12.5%;
+										height: 10vh;
+										margin-top: 1vh;
+
+										display: flex;
+										justify-content: space-around;
+										align-items: center;
+										font-family: 'Amatic SC', cursive;
+
+
+								}
+
+
+								#findPhoto, #getAPhoto {
+
+
+										height: 100%;
+										width: 100%;
+									    border: none;
+									    border-bottom: solid #ffffff;
+									    text-align: center;
+									    color: #ffffff;
+									    background-color: transparent;
+									    font-size: 24px;
+									    font-weight: 100;
+									    font-family: system-ui;
+									    outline: none;
+
+									    display: grid;
+									    justify-content: center;
+									    align-items: center;
+									    text-transform: uppercase;
+									    letter-spacing: 16px;
+								}
+
+
+								#findPhoto: focus {
+
+
+												outline: none;
+								}
+
+
+
+
+
+
+								.main2 {
+
+
+										width: 100%;
+										height: 100vh;
+										background-color: #4c3737;
+
+										display: none;
+
+
+								}
+
+
+
+								.main3 {
+
+
+										width: 100%;
+										height: 100vh;
+										background-color: #4c3737;
+
+										display: none;
+
+
+								}
+
+
+
+				
+
+	</style>
+
+
+	<script src='fontAwesome.js'></script>
+
+
+
+		<script type="text/javascript">
+
+				let separator = ",";
+
+
+				function fontFamily(val){
+
+
+							typeable.style.fontFamily=val;
+
+				}
+
+
+				function fontSize(val){
+
+
+								typeable.style.fontSize=val;
+
+
+				}
+
+
+				function fontColor(val){
+
+
+								typeable.style.color=val;
+
+				}
+
+				function fontWeight(val) {
+
+
+								typeable.style.fontWeight=val;
+				}
+
+
+				function layout(jc,ai){
+
+
+								
+								photo.style.justifyContent=jc;
+								photo.style.alignItems=ai;
+
+								mainWindow();
+
+
+
+
+
+				}
+
+
+
+				function getAPhoto(e,refresh) {
+
+
+					 var key=e.keyCode || e.which;
+								
+
+					  if (key==13 || refresh==1){
+
+								separator=separator+',';
+								let search = document.getElementById('findPhoto').value+separator;
+								console.log(search);
+								let url = "url('https://source.unsplash.com/random/?"+search+"')";
+								photo.style.backgroundImage=url;
+
+
+					  }
+
+
+
+
+
+
+				}
+
+
+
+	
+			</script>
+
+
+</head>
+
+
+<body>
+
+<div class="main1">
+
+					<div class="findPhoto">
+						
+							<input id="findPhoto" type="text" placeholder="Enter a keyword" onkeypress="getAPhoto(event);" />
+
+					</div>
+
+		<section id="front" class="front">
+
+
+				<div id="photo" class="typeOverPhoto">
+					
+
+					<textarea id="typeable" class="typeable"></textarea>
+
+
+				</div>
+
+
+				<i id="tool1" onclick="toolWindow('font');" class="fa tools fa-font" style="font-size:96px;"></i>
+
+
+				<i id="tool2" onclick="toolWindow('layout');" class="fa tools fa-th" style="font-size:96px;"></i>
+
+
+				<i id="tool3" onclick="getAPhoto('',1);" class="fas tools fa-redo" style="font-size:96px;"></i>
+
+				
+
+		</section>
+
+
+</div>
+
+
+<div class="main2">
+	
+
+							<div class="popupForm" id="font">
+								
+
+											<div class="things1">
+												
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontFamily(this.value);">
+
+															<option value="serif">Serif</option>
+															<option value="sans-serif">Sans-Serif</option>
+															<option value="monospace">Monospace</option>
+															<option value="cursive">Cursive</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontSize(this.value);">
+
+															<option value="16px">16px</option>
+															<option value="24px">24px</option>
+															<option value="32px">32px</option>
+															<option value="48px">48px</option>
+															<option value="64px">64px</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontColor(this.value);">
+
+															<option style="color: black;" value="black">Black</option>
+															<option style="background-color: black; color: white" value="white">White</option>
+															<option style="color: blue" value="blue">Blue</option>
+															<option style="color: red;" value="red">Red</option>
+															<option style="color: green;" value="green">Green</option>
+															<option style="color: yellow;" value="yellow">Yellow</option>
+															<option style="color: pink;" value="pink">Pink</option>
+															<option style="color: purple;"value="purple">Purple</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontWeight(this.value);">
+
+															<option value="100">100</option>
+															<option value="400">400</option>
+															<option value="700">700</option>
+															<option value="900">900</option>
+
+														</select>												
+
+												</span>
+
+												<button class="ff" onclick="mainWindow();">SAVE AND CLOSE</button>
+
+
+											</div>
+
+							</div>
+
+
+</div>
+
+
+<div class="main3"> 
+
+
+			<div class="popupForm">
+				
+
+								<div class="things2">
+																					
+
+									<div onclick="layout('flex-start','flex-start');" class="blk-parent" id="blk1">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+									<div onclick="layout('center','flex-start');" class="blk-parent" id="blk2">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','flex-start');" class="blk-parent" id="blk3">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-start','center');" class="blk-parent" id="blk4">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('center','center');" class="blk-parent" id="blk5">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','center');" class="blk-parent" id="blk6">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-start','flex-end');" class="blk-parent" id="blk7">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('center','flex-end');" class="blk-parent" id="blk8">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','flex-end');" class="blk-parent" id="blk9">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+								</div>
+
+
+			</div>
+
+
+
+</div>
+
+<!--
+			<section onmouseleave="this.style.opacity='0.1'; document.getElementById('front').style.opacity='0.9'" onmouseover="this.style.opacity='0.55'; document.getElementById('front').style.opacity='0.1'" id="back" class="back">
+				
+
+							<div class="popupForm" id="font">
+								
+											<div class="title">FONT</div>
+
+											<div class="things1">
+												
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontFamily(this.value);">
+
+															<option value="serif">Serif</option>
+															<option value="sans-serif">Sans-Serif</option>
+															<option value="monospace">Monospace</option>
+															<option value="cursive">Cursive</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontSize(this.value);">
+
+															<option value="16px">16px</option>
+															<option value="24px">24px</option>
+															<option value="32px">32px</option>
+															<option value="48px">48px</option>
+															<option value="64px">64px</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontColor(this.value);">
+
+															<option style="color: black;" value="black">Black</option>
+															<option style="background-color: black; color: white" value="white">White</option>
+															<option style="color: blue" value="blue">Blue</option>
+															<option style="color: red;" value="red">Red</option>
+															<option style="color: green;" value="green">Green</option>
+															<option style="color: yellow;" value="yellow">Yellow</option>
+															<option style="color: pink;" value="pink">Pink</option>
+															<option style="color: purple;"value="purple">Purple</option>
+
+														</select>
+
+												</span>
+												<span class="ff">
+													
+														<div class="icon">
+
+															<i class='fas fa-highlighter' style='font-size:32px'></i>
+
+														</div>
+
+														<select onchange="fontWeight(this.value);">
+
+															<option value="100">100</option>
+															<option value="400">400</option>
+															<option value="700">700</option>
+															<option value="900">900</option>
+
+														</select>												
+
+												</span>
+
+
+											</div>
+
+							</div>
+
+							<div class="popupForm" id="layout">
+								
+								<div class="title">LAYOUT</div>
+
+								<div class="things2">
+																					
+
+									<div onclick="layout('flex-start','flex-start');" class="blk-parent" id="blk1">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+									<div onclick="layout('center','flex-start');" class="blk-parent" id="blk2">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','flex-start');" class="blk-parent" id="blk3">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-start','center');" class="blk-parent" id="blk4">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('center','center');" class="blk-parent" id="blk5">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','center');" class="blk-parent" id="blk6">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-start','flex-end');" class="blk-parent" id="blk7">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('center','flex-end');" class="blk-parent" id="blk8">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+									<div onclick="layout('flex-end','flex-end');" class="blk-parent" id="blk9">
+										
+											<div class="wht-child"></div>
+
+									</div>
+
+
+								</div>
+
+
+							</div>
+
+
+
+			</section>
+
+
+-->
+
+
+				<script>
+
+
+					let main1 = document.getElementsByClassName("main1");
+					let main2 = document.getElementsByClassName("main2");
+					let main3 = document.getElementsByClassName("main3");
+
+
+				let photo = document.getElementById('photo');
+				let typeable = document.getElementById('typeable');
+				let body = document.getElementsByTagName("body")[0];
+
+
+				let back = document.getElementsByTagName("section")[1];
+
+
+				let tools = document.getElementsByClassName("tool");
+
+
+
+
+
+
+
+				photo.addEventListener('mouseover', function(event){
+
+
+								typeable.style.border="dashed 1px";
+								typeable.style.resize='auto';
+								typeable.placeholder='You got what you searched for?';
+								typeable.style.background='#70809063';
+
+
+
+				});
+
+
+
+
+
+				photo.addEventListener('mouseout', function(event){
+
+
+								typeable.style.border="none";
+								typeable.style.resize='none';
+								typeable.style.background='transparent';
+
+								photo.style.width='60vw';
+								typeable.placeholder='';
+
+				});
+
+
+
+				
+
+
+				function toolWindow(what){
+
+									
+
+
+
+								if(what=='font'){
+
+									main1[0].style.display='none';
+									main3[0].style.display='none';
+									main2[0].style.display='block';
+
+								}
+
+								if(what=='layout'){
+
+									main1[0].style.display='none';
+									main2[0].style.display='none';
+									main3[0].style.display='block';
+
+								}								
+
+
+				}
+
+
+				function mainWindow(){
+
+
+									main1[0].style.display='block';
+									main2[0].style.display='none';
+									main3[0].style.display='none';
+
+
+				}
+
+
+
+				</script>
+
+
+
+
+
+</body>
+</html>
